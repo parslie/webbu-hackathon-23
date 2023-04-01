@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProjectGrid from "../../components/ProjectGrid.svelte";
+	import ProjectGrid from '../../components/ProjectGrid.svelte';
 </script>
 
 <ProjectGrid />
