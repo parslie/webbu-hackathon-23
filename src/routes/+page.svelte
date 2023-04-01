@@ -35,9 +35,7 @@
 		Nisi vitae suscipit tellus mauris a. Integer enim neque volutpat ac tincidunt. Amet massa vitae
 		tortor condimentum lacinia. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien.
 		Volutpat est velit egestas dui id. Lobortis feugiat vivamus at augue eget. Venenatis tellus in
-		metus vulputate. Sit amet tellus cras adipiscing enim eu turpis. Arcu risus quis varius quam
-		quisque id diam vel quam. Malesuada fames ac turpis egestas integer eget aliquet nibh. Et odio
-		pellentesque diam volutpat commodo sed egestas egestas.
+		metus vulputate. Sit amet tellus cras adipiscing enim eu turpis.
 	</p>
 </TextArticle>
 
