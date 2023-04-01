@@ -5,8 +5,15 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
+		<style>
+			body {
+				margin: 0;
+				background: linear-gradient(200deg, #009245, #fcee21);
+				font-family: sans-serif;
+			}
+		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+		%sveltekit.body%
 	</body>
 </html>
