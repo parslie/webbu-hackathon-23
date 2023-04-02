@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 * {
 	box-sizing: border-box;
 }
@@ -8,4 +10,13 @@
 
 *:last-child {
 	margin-bottom: 0 !important;
+}
+
+a {
+	color: $light-green;
+	font-weight: bold;
+}
+
+a:visited {
+	color: $green;
 }

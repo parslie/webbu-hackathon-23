@@ -57,7 +57,7 @@
 				border: 3px solid $black;
 				padding: $small-size $medium-size;
 				border-radius: $medium-size;
-				color: $black;
+				color: $black !important;
 				font-weight: 600;
 				text-decoration: none;
 				transition: all 50ms ease-out;
@@ -65,7 +65,7 @@
 				&:hover {
 					border-color: transparent;
 					background: $black;
-					color: #009245;
+					color:  $green !important;
 				}
 			}
 		}

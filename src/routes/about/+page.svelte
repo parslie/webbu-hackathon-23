@@ -3,7 +3,19 @@
 </script>
 
 <TextArticle>
-	<h1>Lorem Ipsum</h1>
+	<h1>About this site</h1>
+	<p>
+		This is my entry for WebbU's Hackathon 2023.
+		<br>
+		I created this site to try out building a website using SvelteKit,
+		which is something I have only dipped my toes in before.
+		<br>
+		You can check out the repository <a href="https://github.com/parslie/webbu-hackathon-23">here</a>!
+	</p>
+</TextArticle>
+
+<TextArticle>
+	<h1>Lorem ipsum</h1>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Praesent semper feugiat nibh sed pulvinar proin gravida
@@ -12,30 +24,6 @@
 		nisi quis eleifend quam adipiscing vitae proin. Commodo ullamcorper a lacus vestibulum sed arcu.
 		Ac turpis egestas maecenas pharetra convallis posuere morbi. Facilisis sed odio morbi quis
 		commodo odio aenean. Tempus imperdiet nulla malesuada pellentesque elit.
-	</p>
-</TextArticle>
-
-<TextArticle>
-	<h1>Lorem Ipsum 2</h1>
-	<p>
-		Gravida rutrum quisque non tellus orci ac. Lacinia at quis risus sed vulputate odio ut enim.
-		Amet tellus cras adipiscing enim eu. Aliquet porttitor lacus luctus accumsan. Nunc pulvinar
-		sapien et ligula. Metus vulputate eu scelerisque felis imperdiet. Lorem ipsum dolor sit amet
-		consectetur adipiscing. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla.
-		Molestie ac feugiat sed lectus vestibulum mattis. Sit amet nisl purus in mollis nunc. Arcu non
-		sodales neque sodales ut etiam. Amet mattis vulputate enim nulla aliquet porttitor. Urna et
-		pharetra pharetra massa massa ultricies mi quis hendrerit. Leo a diam sollicitudin tempor id.
-		Pellentesque habitant morbi tristique senectus et netus. Ut pharetra sit amet aliquam id diam.
-		Habitant morbi tristique senectus et netus et. Amet facilisis magna etiam tempor orci eu
-		lobortis elementum nibh. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula
-		ipsum. Ut tristique et egestas quis ipsum suspendisse ultrices.
-	</p>
-	<p>
-		Ultricies lacus sed turpis tincidunt id aliquet. Leo in vitae turpis massa sed elementum tempus.
-		Nisi vitae suscipit tellus mauris a. Integer enim neque volutpat ac tincidunt. Amet massa vitae
-		tortor condimentum lacinia. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien.
-		Volutpat est velit egestas dui id. Lobortis feugiat vivamus at augue eget. Venenatis tellus in
-		metus vulputate. Sit amet tellus cras adipiscing enim eu turpis.
 	</p>
 </TextArticle>
 

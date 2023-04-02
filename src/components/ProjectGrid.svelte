@@ -3,25 +3,39 @@
 	import { cubicOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
 
+	import thisSiteImg from '../res/this-website.png';
+	import mateImg from '../res/mate.png';
+	import robbeImg from '../res/robbe.png';
+
 	interface Project {
 		title: string;
 		img: string;
 		description: string;
 		extraDescription: string;
+		repository: string;
 	}
 
 	let projects: Project[] = [
 		{
-			title: 'Minecraft',
-			img: '',
-			description: 'I totally made this!',
-			extraDescription: 'P.S: I did not actually make this.'
+			title: 'Project Porfolio',
+			img: thisSiteImg,
+			description: 'That\'s this site!',
+			extraDescription: 'I created this site to try out building a website using SvelteKit, which is something I have only dipped my toes in before.',
+			repository: "https://github.com/parslie/webbu-hackathon-23",
 		},
 		{
-			title: 'Terraria',
-			img: '',
-			description: 'I totally made this!',
-			extraDescription: 'P.S: I did not actually make this.'
+			title: 'MATE',
+			img: mateImg,
+			description: 'A TUI text editor made with Rust.',
+			extraDescription: 'It\'s name is an acronym for "Marvelous Application for Text Editing".',
+			repository: "https://github.com/parslie/mate",
+		},
+		{
+			title: 'Robbe Robot',
+			img: robbeImg,
+			description: 'A Discord bot with various commands.',
+			extraDescription: 'It\'s written in Python using the discord.py library.',
+			repository: "https://github.com/parslie/robbe-robot",
 		}
 	];
 
@@ -111,8 +125,13 @@
 					on:click={(e) => onProjectSelect(e, project)}
 					on:keydown={() => {}}
 				>
-					<h1>{project.title}</h1>
-					<p>{project.description}</p>
+					<aside class="left">
+						<img alt="preview of project" src="{project.img}">
+					</aside>
+					<aside class="right">
+						<h1>{project.title}</h1>
+						<p>{project.description}</p>
+					</aside>
 				</article>
 			{:else}
 				<article
@@ -121,8 +140,13 @@
 					on:keydown={() => {}}
 					style="visibility: hidden;"
 				>
-					<h1>{project.title}</h1>
-					<p>{project.description}</p>
+					<aside class="left">
+						<img alt="preview of project" src="{project.img}">
+					</aside>
+					<aside class="right">
+						<h1>{project.title}</h1>
+						<p>{project.description}</p>
+					</aside>
 				</article>
 			{/if}
 		{/each}
@@ -137,17 +161,29 @@
     "
 	>
 		{#if selectedProject}
-			<h1>{selectedProject.title}</h1>
-			<p>{selectedProject.description}</p>
-			<p>{selectedProject.extraDescription}</p>
+			<aside class="left">
+				<img alt="preview of project" src="{selectedProject.img}">
+			</aside>
+			<aside class="right">
+				<h1>{selectedProject.title}</h1>
+				<p>{selectedProject.description}</p>
+				<p>{selectedProject.extraDescription}</p>
+				<p>Repository: <a href="{selectedProject.repository}">{selectedProject.repository}</a></p>
+			</aside>
 		{/if}
 	</article>
 
 	<article id="hidden-full" style="visibility: hidden;">
 		{#if selectedProject}
-			<h1>{selectedProject.title}</h1>
-			<p>{selectedProject.description}</p>
-			<p>{selectedProject.extraDescription}</p>
+			<aside class="left">
+				<img alt="preview of project" src="{selectedProject.img}">
+			</aside>
+			<aside class="right">
+				<h1>{selectedProject.title}</h1>
+				<p>{selectedProject.description}</p>
+				<p>{selectedProject.extraDescription}</p>
+				<p>Repository: <a href="{selectedProject.repository}">{selectedProject.repository}</a></p>
+			</aside>
 		{/if}
 	</article>
 </div>
@@ -165,11 +201,28 @@
 		border-radius: $medium-size;
 		background-color: $black;
 		color: $white;
+
+		display: flex;
+		flex-direction: row;
+		gap: $medium-size;
+
+		.left {
+			width: 50%;
+			min-width: 50%;
+		}
+
+		.left img {
+			width: 100%;
+		}
+
+		.right {
+			flex-grow: 1;			
+		}
 	}
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 		gap: $medium-size;
 
 		&.absolute {
