@@ -2,21 +2,21 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./webbu-hackathon-23/favicon.png" />
+		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./webbu-hackathon-23/_app/immutable/assets/_layout.f69ced93.css" rel="stylesheet">
-		<link href="./webbu-hackathon-23/_app/immutable/assets/_page.c088bfab.css" rel="stylesheet">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/entry/start.882769ec.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/chunks/index.4d09f106.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/chunks/singletons.ab80a0bc.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/chunks/index.848fc5ba.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/chunks/paths.579c3948.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/entry/app.d0b95324.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/entry/_layout.svelte.b6dc7877.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/entry/_layout.js.984db11e.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./webbu-hackathon-23/_app/immutable/entry/_page.svelte.266a52e3.js">
+		<link href="./_app/immutable/assets/_layout.f69ced93.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.c088bfab.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.f649e2d1.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.4d09f106.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c82d680a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.848fc5ba.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.bf221773.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.0fba648a.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.c5a0eb6e.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/about-page.svelte.266a52e3.js">
 		<style>
 			body {
 				margin: 0;
@@ -30,7 +30,7 @@
 
 
 <div class="svelte-1efkbkg"><header class="svelte-1efkbkg"><h1 class="svelte-1efkbkg">Viktor Holta</h1>
-		<nav class="svelte-1efkbkg"><a href="/webbu-hackathon-23/" class="svelte-1efkbkg">About</a>
+		<nav class="svelte-1efkbkg"><a href="/webbu-hackathon-23/about" class="svelte-1efkbkg">About</a>
 			<a href="/webbu-hackathon-23/projects" class="svelte-1efkbkg">Projects</a></nav></header>
 
 	<main class="svelte-1efkbkg"><article class="svelte-3mj6b3"><h1 class="svelte-1b7ui1s">Lorem Ipsum</h1>
@@ -72,20 +72,20 @@
 			
 			<script>
 				{
-					__sveltekit_14cqhhv = {
+					__sveltekit_1cbu2wp = {
 						env: {},
 						assets: "/webbu-hackathon-23",
-						base: new URL("./webbu-hackathon-23", location).pathname,
+						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
 					};
 
 					const data = [null,null];
 
 					Promise.all([
-						import("./webbu-hackathon-23/_app/immutable/entry/start.882769ec.js"),
-						import("./webbu-hackathon-23/_app/immutable/entry/app.d0b95324.js")
+						import("./_app/immutable/entry/start.f649e2d1.js"),
+						import("./_app/immutable/entry/app.0fba648a.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_14cqhhv.element, {
+						kit.start(app, __sveltekit_1cbu2wp.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,
