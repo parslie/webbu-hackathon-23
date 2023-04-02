@@ -6,7 +6,7 @@
 	<header>
 		<h1>Viktor Holta</h1>
 		<nav>
-			<a href="{base}/">About</a>
+			<a href="{base}/about">About</a>
 			<a href="{base}/projects">Projects</a>
 		</nav>
 	</header>

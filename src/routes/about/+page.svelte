@@ -1,5 +1,5 @@
 <script>
-	import TextArticle from '../components/TextArticle.svelte';
+	import TextArticle from '../../components/TextArticle.svelte';
 </script>
 
 <TextArticle>
@@ -40,5 +40,5 @@
 </TextArticle>
 
 <style lang="scss">
-	@import '../default.scss';
+	@import '../../default.scss';
 </style>
