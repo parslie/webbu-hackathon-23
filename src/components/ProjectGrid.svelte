@@ -131,6 +131,7 @@
 					<aside class="right">
 						<h1>{project.title}</h1>
 						<p>{project.description}</p>
+						<p style="font-weight: bold; text-decoration: underline;">Click to view!</p>
 					</aside>
 				</article>
 			{:else}
@@ -146,6 +147,7 @@
 					<aside class="right">
 						<h1>{project.title}</h1>
 						<p>{project.description}</p>
+						<p style="font-weight: bold; text-decoration: underline;">Click to view!</p>
 					</aside>
 				</article>
 			{/if}
@@ -169,6 +171,7 @@
 				<p>{selectedProject.description}</p>
 				<p>{selectedProject.extraDescription}</p>
 				<p>Repository: <a href="{selectedProject.repository}">{selectedProject.repository}</a></p>
+				<p style="font-weight: bold; text-decoration: underline;">Click outside to close!</p>
 			</aside>
 		{/if}
 	</article>
@@ -183,6 +186,7 @@
 				<p>{selectedProject.description}</p>
 				<p>{selectedProject.extraDescription}</p>
 				<p>Repository: <a href="{selectedProject.repository}">{selectedProject.repository}</a></p>
+				<p style="font-weight: bold; text-decoration: underline;">Click outside to close!</p>
 			</aside>
 		{/if}
 	</article>
